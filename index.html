@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanuj | CSM Student</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="#home" class="logo">Tanuj</a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Hello, I'm</p>
+        <h1>Tanuj</h1>
+        <p class="hero-subtitle">CSM student focused on AI/ML and software development.</p>
+        <p class="hero-text">
+          I am interested in AI/ML, software development, and building real-world projects that people can actually use.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <a href="#contact" class="btn btn-outline">Contact me</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <h2>About me</h2>
+        <p class="section-intro">A short introduction so you know who I am and what I care about.</p>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>Background</h3>
+            <p>
+              I am a CSM student learning how software and intelligent systems are built.
+              I enjoy turning ideas into working projects and writing code that is clear and useful.
+            </p>
+          </div>
+          <div class="about-card">
+            <h3>What I enjoy</h3>
+            <p>
+              I am interested in AI/ML, software development, and building real-world projects.
+              I like solving practical problems and learning by shipping things I can show and improve.
+            </p>
+          </div>
+          <div class="about-card">
+            <h3>Currently</h3>
+            <p>
+              I am working on projects like career guidance with AI, QR tools in Python, and student support ideas,
+              while growing my skills in programming, data, and version control.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <p class="section-intro">Languages and tools I use to build software and projects.</p>
+
+        <ul class="skills-list">
+          <li>
+            <h3>Java</h3>
+            <p>Object-oriented programming and application logic.</p>
+          </li>
+          <li>
+            <h3>Python</h3>
+            <p>Scripts, tools, and AI/ML-related project work.</p>
+          </li>
+          <li>
+            <h3>JavaScript</h3>
+            <p>Interactive pages and client-side behavior.</p>
+          </li>
+          <li>
+            <h3>HTML &amp; CSS</h3>
+            <p>Page structure, layout, and responsive design.</p>
+          </li>
+          <li>
+            <h3>SQL</h3>
+            <p>Storing, querying, and organizing data.</p>
+          </li>
+          <li>
+            <h3>Git &amp; GitHub</h3>
+            <p>Version control, collaboration, and sharing code.</p>
+          </li>
+          <li>
+            <h3>AI/ML</h3>
+            <p>Building intelligent features for real-world use cases.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="section-intro">A few examples of work I have built and ideas I am developing.</p>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-image" aria-hidden="true">CareerPath</div>
+            <div class="project-body">
+              <h3>CareerPath AI</h3>
+              <p>
+                An AI-powered personalized career and skill roadmap system that helps people
+                understand what to learn next and how to move toward a career path.
+              </p>
+              <p class="project-tags">AI/ML · Python · JavaScript</p>
+              <a href="#contact" class="project-link">Ask me about this project</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image" aria-hidden="true">QR Code</div>
+            <div class="project-body">
+              <h3>QR Code Encoder/Decoder</h3>
+              <p>
+                A Python-based QR code project for encoding information into QR codes
+                and decoding them back into readable data.
+              </p>
+              <p class="project-tags">Python</p>
+              <a href="#contact" class="project-link">Ask me about this project</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image" aria-hidden="true">Support</div>
+            <div class="project-body">
+              <h3>Smart Student Support System</h3>
+              <p>
+                A student-focused application concept designed to make academic support,
+                guidance, and resources easier to reach in one place.
+              </p>
+              <p class="project-tags">Software development · AI/ML</p>
+              <a href="#contact" class="project-link">Ask me about this project</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="section-intro">Send a message and I will get back to you.</p>
+
+        <form class="contact-form" id="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="How can I help?"></textarea>
+
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Tanuj. Built with HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
